@@ -8,18 +8,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Blog
 
-<!-- {% for post in paginator.posts %}
-  <article>
-      {% assign content = post.content %}
-      {% include post_content.html %}
-  </article>
-  <div class="clear"></div>
-{% endfor %} -->
-
 
 {% for post in site.posts %}
-{% assign content = post.content %}
 ### {{ post.title}}
+{{ post.url}}
 
 {{ post.content }}
 {% endfor %}
